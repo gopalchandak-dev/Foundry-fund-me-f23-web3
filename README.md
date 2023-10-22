@@ -1,3 +1,5 @@
+# THINGS DONE
+
 1. Proper ReadMe
 2. Integration tests
 3. Programatic Verification
