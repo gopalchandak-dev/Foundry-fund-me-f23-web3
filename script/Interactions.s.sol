@@ -4,6 +4,7 @@
 // Withdraw
 
 pragma solidity ^0.8.18;
+
 import {Script, console} from "forge-std/Script.sol";
 import {DevOpsTools} from "foundry-devops/src/DevOpsTools.sol";
 import {FundMe} from "../src/FundMe.sol";
@@ -22,10 +23,9 @@ contract fundFundMe is Script {
 
         fundFundMe(mostRecentlyDeployed);
         vm.stopBroadcast();
-
     }
-
 }
+
 contract withdrawFundMe is Script {
     function withdrawFundMe(address mostRecentlyDeployed) public {
         vm.startBroadcast();
@@ -39,7 +39,5 @@ contract withdrawFundMe is Script {
 
         withdrawFundMe(mostRecentlyDeployed);
         vm.stopBroadcast();
-
     }
-
 }
